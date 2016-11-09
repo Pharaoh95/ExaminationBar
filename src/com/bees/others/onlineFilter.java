@@ -12,9 +12,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-/**
- * Servlet Filter implementation class onlineFilter
- */
 public class onlineFilter implements Filter {
 
 	public void destroy() {
@@ -23,13 +20,7 @@ public class onlineFilter implements Filter {
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		// HttpServletRequest httpRequest = (HttpServletRequest) request;
-		// String url = httpRequest.getRequestURL().toString();
-		// HttpSession session = httpRequest.getSession();
-		// if (session.getAttribute("Manager") == null) {
-		// request.getRequestDispatcher("/login.jsp").forward(request,
-		// response);
-		// }
+		// TODO
 		chain.doFilter(request, response);
 	}
 
