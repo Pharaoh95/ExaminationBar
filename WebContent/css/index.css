@@ -1,0 +1,508 @@
+@charset "utf-8";
+/* CSS Document */
+/*主界面*/
+body,span,ol,ul,li,a,div,img,table,input{
+	padding:0;
+	
+	}
+
+body{
+	width:1468px;
+	height:956px;
+	overflow:hidden;
+	background:#fafbf5;
+	}
+iframe{
+	width:1263px;
+	height:100%;
+	frameborder:0;
+    border:none;
+	position:relative;
+	left:-250px;
+	}
+iframe.nav-is-visible{
+	width:1063px;
+	margin:0 auto;
+	position:relative;
+	left:-55px;
+}
+
+#left{
+	width:200px;
+	height:100%;
+	margin-top:40px;
+	background:rgba(0,40,79,0.1);
+	border:1px solid #ddd;
+	float:left;
+	box-shadow:0px 0px 1px 1px rgba(0,0,0,0.2);
+	}
+#left #left-list{
+	margin-top:100px;
+	
+}
+#left #left-list li{
+	list-style:none;
+	width:200px;
+	height:60px;
+	line-height:60px;
+	border-top:1px solid #ddd;
+	}
+#left #left-list li a{
+	margin:0 50px;
+	color:#666;
+	font-size:22px;
+	fon-weight:bold;
+	font-family:'楷体';
+	text-decoration:none;
+	
+	}
+#left #left-list li a:hover{
+	color:#e67b01;
+}
+#left #left-list li a:active{
+	outline:none;
+	background:none;
+}
+
+#right{
+	width:1163px;
+	height:738px;
+	background:#fbfaf5;
+	float:right;
+	}
+#right #right-top{
+	width:120%;
+	height:50px;
+	background:#e67b01;
+	font:18px '微软雅黑' ;
+	color:white;
+	margin-left:-100px;
+	}
+#right #right-top #bigspan{
+	position:relative;
+	top:-25px;
+	left:800px;
+	}
+#right #right-top #bigspan a{
+	text-decoration:none;
+	color:white;
+	}
+#right #right-top #bigspan a:hover{
+	text-decoration:none;
+	color:#122a42;
+	}
+#right .help{
+	position:relative;
+	left:780px;
+	top:-35px;
+	font-size:14px;
+	color:#e67b01;
+	background:white;
+	padding-top:5px;
+	padding-left:2px;
+	padding-right:2px;
+	border-radius:0 0 3px 3px;
+}	
+	
+
+
+/*登录界面*/
+#login{
+	width:341px;
+	height:280px;
+	background:white;
+	margin-left:800px;
+	margin-top:200px;
+	border-radius:10px;
+	box-shadow:0px 5px 5px 5px  rgba(0,0,0,0.3);
+	}
+#login form ul{
+	text-align:center;
+	list-style-type:none;
+	padding-top:20px;
+	font-family:'微软雅黑';
+	}
+#login form ul li{
+	
+	margin-top:20px;
+	}
+#login form #user img{
+	position:relative;
+	left:-20px;
+	top:10px;
+	width:20px;
+	height:21px;
+	}
+#login form #user input{
+	height:31px;
+	width:200px;
+	border-bottom:1px solid #e67b01;
+	border-radius:0;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	}
+#login form #user input:focus{
+	border-bottom:1px solid #e67b01;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	outline:none;
+	}
+#login form #password img{
+	position:relative;
+	left:-20px;
+	top:10px;
+	width:20px;
+	height:24px;
+	}
+#login form #password input{
+	height:31px;
+	width:200px;
+	border-bottom:1px solid #e67b01;
+	border-radius:0;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	}
+#login form #password input:focus{
+	border-bottom:1px solid #e67b01;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	outline:none;
+	}
+#login form #jizhumima{
+	color:#e67b01;
+	font-size:14px;
+	margin-top:20px;
+	}
+#login form #button {
+	margin-top:20px;
+	margin-left:10px;
+	}
+#login form #button input{
+	font-family:'微软雅黑';
+	color:white;
+	font-size:16px;
+	width:100px;
+	height:31px;
+	background:#e67b01;
+	border:none;
+	border-radius:10px;
+	margin-top:20px;
+	}
+/**
+ * 隐藏默认的checkbox
+ */
+input[type=checkbox] {
+	visibility: hidden;
+}
+/**
+ * Checkbox Five
+ */
+#login form ul #jizhumima .checkboxFive {
+	width: 25px;
+	position: relative;
+	float:left;
+}
+/**
+ * Create the box for the checkbox
+ */
+#login form ul #jizhumima .checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+  	left: 0;
+	background: white;
+	border:2px solid #216ab2;
+	border-radius:10px;
+}
+/**
+ * Display the tick inside the checkbox
+ */
+#login form ul #jizhumima .checkboxFive label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid green;
+	border-top: none;
+	border-right: none;
+ 
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+/**
+ * Create the hover event of the tick
+ */
+#login form ul #jizhumima .checkboxFive label:hover::after {
+	opacity: 0.5;
+}
+ 
+/**
+ * Create the checkbox state for the tick
+ */
+#login form ul #jizhumima .checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+#login form ul #jizhumima  #five{
+	position:relative;
+	left:60px;
+	}
+#login form ul #jizhumima  #six{
+	position:relative;
+	left:160px;
+	}
+	
+	
+	
+/*表格*/
+#content{
+	height:478px;
+	width:100%;
+	overflow-x:scroll;
+	
+}
+
+
+
+#table1{
+	width:100%;
+	background:white;
+	border-top:1px solid #ddd;
+	border-bottom:2px solid #ddd;
+	font-family:'微软雅黑';
+	font-size:14px;
+	color:#444;
+	overflow:none;
+	}
+#table1.nav-is-visible{
+	background:red;
+}
+#table1 #head{
+	color:black;
+	background:rgba(0,40,79,0.1);
+	font-size:18px;
+	font-family:'楷体';
+	font-weight:bold;
+	
+	}
+#table1 tr{
+	height:38px;
+
+	}
+
+#table1 tr:nth-child(even)
+{
+	background:#fff;
+	
+}
+#table1 td form {
+	margin-left:-600px;
+	margin-bottom:0;
+	}
+#table1 td form input {
+	font-family:'微软雅黑';
+	width:79px;
+	height:26px;
+	margin-right:50px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:20px;
+	border:none;
+	}
+#table1 td{
+	border-left:1px solid #ddd;
+	border-top:1px solid #ddd;
+	text-align:center;
+	}
+#table1 td  .sed{
+	text-decoration:none;
+	/*background:rgba(0,40,79,0.1);*/
+	background:#e67b01;
+	color:#fff;
+	border-radius:3px;
+	padding:2px 10px;
+	/*color:black;*/
+}
+#table1 td .sed1{
+	text-decoration:none;
+	background:#ccc;
+	color:#fff;
+	border-radius:3px;
+	padding:2px 10px;
+}
+ #table1 img{
+	width:15px;
+	height:17px;
+	}
+
+#caidan{	
+			width:1083px;
+			height:60px;
+			background:#fafbf5;
+			padding-top:0px;
+			color:#e67b01;
+			font-size:16px;
+		}
+	
+#caidan select,input{
+			margin:0px;
+			margin-right:25px;
+			margin-left:10px;
+			padding:0px;
+			width:138px;
+			height:31px;
+			border:1px solid #000;
+			outline:none;
+			border:2px solid  #e67b01;
+			border-radius:5px;
+			text-indent:0.5em;
+				
+			}
+#caidan #EntTime_img{
+	
+	margin-left:-60px;
+}
+#caidan img{
+				border:none;
+				margin-left:-54px;
+				margin-right:25px;
+				position:relative;
+				top:10px;
+			}
+#caidan select{
+				width:168px;
+				 -webkit-appearance: none;
+			    -moz-appearance: none;
+			    -ms-appearance:none;
+			    appearance:none;
+			    background:none;
+				
+				background-position:140px 3px;
+				}
+
+#caidan select:focus{
+				
+				background-position:140px 3px;
+				outline:none;
+			}
+#caidan select::-ms-expand {display:none;}
+
+#caidan .DivSelect{
+	border:2px solid #e67b01;
+	border-right:none;
+	border-radius:5px 0 0 5px;
+	background:#fff;
+	width:168px;
+	height:31px;
+	float:left;
+	overflow:hidden;
+	position:absolute;
+	left:300px;
+	top:15px;
+	
+}
+#caidan .SelectList{
+	background:none;
+	border:none;
+	width:200px;
+}
+#caidan #select{
+	height:31px;
+	width:50px;
+	border:2px solid #e67b01;
+	border-left:none;
+	border-radius:0 5px 5px 0;
+	margin-left:440px;
+	margin-top:-35px;
+	}
+#caidan #select img{
+	position:relative;
+	left:80px;
+	top:5px;
+	
+}
+#caidan  .DivFilepath{
+	width:68px;
+	height:31px;
+	border:2px solid  #e67b01;
+	border-radius:5px;
+	text-align:right;
+	padding-left:20px;
+	position:relative;
+	left:430px;
+	top:-34px;
+	overflow:hidden;
+	}
+#caidan #filepath{
+	
+	width:78px;
+	height:31px;
+	position:absolute;
+	left:-20px;
+	z-index:100px;
+	background:none;
+	opacity:0;
+	border:none;
+}
+#caidan  .DivFilepath img{
+	position:relative;
+	left: 0px;
+	top: 5px;
+	
+	}
+#caidan #input:hover{
+		border:2px solid  #e67b01;
+		outline:medium;
+		color:#e67b01;
+	}
+ #alertMsg {
+            display: none;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px black;
+            padding: 10px;
+            font-size: 12px;
+            position: absolute;
+            text-align: center;
+            background: #fff;
+            z-index: 100000;
+        }
+
+        #alertMsg_info {
+            padding: 2px 15px;
+            line-height: 1.6em;
+            text-align: left;
+        }
+
+        #alertMsg_btn1, #alertMsg_btn2 {
+            display: inline-block;
+            background: url(images/gray_btn.png) no-repeat left top;
+            padding-left: 3px;
+            color: #000000;
+            font-size: 12px;
+            text-decoration: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #alertMsg_btn1 cite, #alertMsg_btn2 cite {
+            line-height: 24px;
+            display: inline-block;
+            padding: 0 13px 0 10px;
+            background: url(images/gray_btn.png) no-repeat right top;
+            font-style: normal;
+        }
+	
